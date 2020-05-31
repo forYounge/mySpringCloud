@@ -48,15 +48,15 @@ public class PaymentController {
         }
     }
 
-    @GetMapping(value="/payment/discovery")
+    @GetMapping("/payment/discovery")
     public Object discovery(){
         List<String> services = discoveryClient.getServices();
-        for(String element : services){
+        for (String element : services) {
             log.info("****element: " + element);
         }
 
         List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
-        for (ServiceInstance instance : instances){
+        for (ServiceInstance instance : instances) {
             log.info(instance.getServiceId() + "\t" + instance.getHost() + "\t" + instance.getPort() + "\t" + instance.getUri());
         }
 

@@ -12,6 +12,10 @@
   <modules>
     <module>cloud-provider-payment8001</module>
     <module>cloud-consumer-order80</module>
+    <module>cloud-api-commons</module>
+    <module>cloud-eureka-server7001</module>
+    <module>cloud-eureka-server7002</module>
+    <module>cloud-provider-payment8002</module>
   </modules>
 
   <!--统一管理jar包版本-->
@@ -22,7 +26,7 @@
     <junit.version>4.12</junit.version>
     <lombok.version>1.18.10</lombok.version>
     <log4j.version>1.2.17</log4j.version>
-    <mysql.version>8.0.20</mysql.version>
+    <mysql.version>8.0.16</mysql.version>
     <druid.version>1.1.16</druid.version>
     <mybatis.spring.boot.version>2.1.1</mybatis.spring.boot.version>
   </properties>
