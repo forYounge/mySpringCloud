@@ -21,6 +21,12 @@ spring:
           #uri: http://localhost:8001
           predicates:
             - Path=/payment/lb/**
+            #- After=2020-06-30T23:50:20.703+08:00[Asia/Shanghai]
+            #- Cookie=username,zzyy
+            #- Header=X-Request-Id, \d+ #请求头要有X-Request-Id属性并且值为整数的正则表达式
+            #- Host=**.atguigu.com
+            #- Method=GET
+            #- Query=username, \d+ #要有参数名username并且值还要是整数的正则表达式
 
 eureka:
   instance:
