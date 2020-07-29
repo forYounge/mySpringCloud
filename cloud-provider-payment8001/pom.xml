@@ -20,16 +20,16 @@
             <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>-->
         <!--eureka-client-->
-        <!--<dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>-->
+        </dependency>
         <!-- 引入自己定义的api通用包，可以使用Payment支付Entity-->
-        <!--<dependency>
+        <dependency>
             <groupId>com.atguigu.springcloud</groupId>
             <artifactId>cloud-api-commons</artifactId>
             <version>${project.version}</version>
-        </dependency>-->
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
